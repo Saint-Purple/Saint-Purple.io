@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+    /* background-color: #333; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url("../assets/backgound1.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Create 2 equal colums */
+.column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+#blocklyDiv{
+    height: 480px;
+    width: 500;
+}
+
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+}
+/* 
+layout */ */
+div.nav{
+  overflow: hidden;
+}
+
+.nav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0.4) ;
+}
+
+.nav a:hover {
+  background-color: rgba(30, 110, 102, 0.6) ;
+  text-decoration: none;
+  color: white;
+  border-bottom: solid white 3px;
+}
+
+.nav a.active {
+  background-color: rgb(50, 168, 157);
+  color: black;
+  text-decoration: none;
+}
+
+.code-block {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.1s;
+  padding: 10px 10px;
+  width: fit-content;
+  height: max-content;
+}
+
+.code-block:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
+  background-color: #333;
+  padding: 20px;
+  height: 500px;
+  width: 500px;
+}
+
+.grid-con{
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
+  background-color: #333;
+  padding: 20px;
+  height: 500px;
+  width: 900px;
+  position: relative; left: 400px;
+}
+.grid-part {
+  background-color: #10A5F5;
+  border: 1px solid #10A5F5;
+  padding: 0px;
+}
+
+.button1 {
+  border: none;
+  color: white;
+  padding: 15px 56px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #333;
+  border-radius: 5%;
+  position: relative; left: 100px; bottom: 100px;
+}
+
+div.action-buttons{
+  background-color: rgba(0,0,0,0.4) !important;
+  padding: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+
+.action-buttons button{
+  position: static;
+}
+
+.button {
+    border: none;
+    color: black;
+    padding: 15px 56px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color:  red;
+  position: relative; left: 400px;  bottom: 100px;
+  border-radius: 20%;
+  width: fit-content;
+  }
+
+.h4 {
+  color: white;
+}
+
+
+
+/* stars  */
+.filled {
+  color: orange;
+ 
+}
+.starScream {
+  position: relative; bottom: 600px;
+  margin-top: auto;
+}
+
+.con {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span  for small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+
+  .cen {
+    align-content: center;
+    align-self: start;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* timer */
+.format{
+  color:red;
+ position: relative; left: 1300px; bottom: 85px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: oblique;
+}
+
+/* */
+#loginFormContainer{
+  width: 60% !important;
+  background-color: rgba(11, 20, 13, 0.7);
+  margin-top: 11% !important;
+  border: solid black 0.5px;
+  border-radius: 10px;
+  padding: 30px !important;
+}
+
+label{
+color: white;
+}
+
+#scoreTable{
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+div.blocklyToolboxDiv.blocklyNonSelectable{
+  background-color: rgba(0, 16, 43, 0.4);
+  padding-top: 10%;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: solid black 1px;
+}
+
+.blocklyFlyoutBackground{
+  fill: rgb(0, 16, 43) !important;
+  opacity: 0.2 !important;
+}
+
+.container{
+  width: 95% !important;
+  margin: auto !important;
+  padding: 0px !important;
+}
+
+
+#scoreHead{
+  background-color: rgba(0,0,0,0.4) !important;
+  color: white;
+  text-align: center;
+}
+
+#timeElapsedLabel{
+  text-align: center;
+}
+
+#logoHeading{
+  color: white;
+  text-align: center;
+  font-family: 'Stencil Std', 'fantasy';
+}
+
+#tutorialTable{
+  width: 100%;
+  margin:auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#tutorialTable td{
+  padding:10px;
+}
+
+.tutorialInfo{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(0,0,0,0.4);
+  font-size: medium;
+  padding: 10px; 
+}
+
+#logoImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+div.tutorial-buttons{
+  background-color: rgba(0,0,0,0.4) !important;
+  padding: 10px;
+  width: 84%;
+  margin-left: 50%;
+}
+
+
+
+.tutorial-buttons button{
+  position: static;
+}
+
+#tutorialHead{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+}
+
+#tutorialHeadDiv{
+  color: white ;
+  background-color: rgba(0,0,0,0.6) !important;
+  padding: 20px;
+  border-radius: 5px ;
+  width: 90%;
+  margin: auto;
+}
